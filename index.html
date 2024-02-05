@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width" />
+        <meta name="viewport" content="width=device-width">
         <title>Mike Dawes | Portfolio</title>
         <link rel="stylesheet" type="text/css" href="./CSS/Portfolio_css.css">
         <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/zelda-dx">
@@ -12,7 +12,15 @@
     <!--Body-->
     <body class="Background">
 
-        <!--Navigation-->
+        <div class="name-container">
+            <div><img src="Images/NameLogo.png" id="nameicon" alt="Mike Dawes"></div>
+            <div><p id="monty"><q>The universe itself keeps on expanding and expanding<br>in all of the directions it can whizz.</q>
+                    <br>-Eric Idle (Monty Python)
+                </p></div>
+        </div>
+
+        <!--Navigation - no longer needed-->
+        <!--
         <div class="Navbar">
             <a href="#Home">Home</a>
             <a href="#Slideshow">Slideshow</a>
@@ -23,15 +31,18 @@
 
         <br>
         <br>
-        <!--Background video-->
+        -->
+        <!--Background video - no longer needed-->
+        <!--
         <div id="Home">
             <video autoplay muted loop id="Typing_Video">
                 <source src="./Images/Video/Matrix.mp4" type="video/mp4">
                 Your browser does not support HTML5 video.
             </video>
         </div>
-
-        <!--Video text-->
+        -->
+        <!--Video text - replace with header-->
+        <!--
         <div class="Video_Text">
             <h1 class="white-text">Mike Dawes's Portfolio</h1>
             <strong>
@@ -47,38 +58,38 @@
                 </p>
             </strong>
         </div>
-
+        -->
         <!--Slideshow section-->
-        <div id="Slideshow">
+        <!-- <div id="Slideshow">
             <div id="Slideshow_Background">
                 <div id="Slideshow_Container">
-                    <!--Slide 1-->
+                    Slide 1
                     <div class="mySlides fade">
                         <img class="Slideshow_Images" src="./Images/PersonalPhoto.jpg" alt="Picture of myself and my Nana">
                         <div class="text">I'm here to help get your project to the next level!</div>
                     </div>
-                    <!--Slide 2-->
+                    Slide 2
                     <div class="mySlides fade">
                         <img class="Slideshow_Images" src="./Images/HTML_CSS_JS_Java_Python.png" alt="Icons for HTML, CSS, JS, Java, Python">
                         <div class="text">I'm a UI/UX developer, trained in<br> these languages, including:</div>
                     </div>
-                    <!--Slide 3-->
+                    Slide 3
                     <div class="mySlides fade">
                         <img class="Slideshow_Images" src="./Images/C++.png" alt="C++ icon">
                         <div class="text">Have taken classes in C++ for game development</div>
                     </div>
-                    <!--Slide 4-->
+                    Slide 4
                     <div class="mySlides fade">
                         <img class="Slideshow_Images" src="./Images/Computer_writing.jpg" alt="Writing on Computer image">
                         <div class="text"><a class="white-text contact" onclick="openForm()">Feel free to contact me for any questions!</a></div>
                     </div>
-                    <!--Previous and next buttons-->
-                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                    Previous and next buttons-->
+                    <!-- <a class="Previous" onclick="plusSlides(-1)">&#10094;</a> -->
+                    <!-- <a class="Next" onclick="plusSlides(1)">&#10095;</a> -->
                 </div>
                 <br>
 
-                <!--Slideshow dots-->
+                <!-- Slideshow dots
                 <div style="text-align: center">
                     <span class="dot" onclick="currentSlide(1)"></span>
                     <span class="dot" onclick="currentSlide(2)"></span>
@@ -86,21 +97,20 @@
                     <span class="dot" onclick="currentSlide(4)"></span>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <!--About-->
         <div class="Row" id="About">
             <!--Left Column-->
             <div class="Column_2">
-                <img src="./Images/Mountainscape.jpeg" alt="Misty Mountains">
+                <!-- <img src="./Images/Mountainscape.jpeg" alt="Misty Mountains"> -->
             </div>
             <!--Right Column-->
-            <div class="Column_1">
-                <h1>About Me</h1>
-                <p>
-                    I am a newly trained software programmer and have a passion for graphic design and gaming.
+            <div class="Column_1"  id="TRCol">
+                <p id="TRTex">
+                    <p2>I am a newly trained software programmer and have a passion for graphic design and coding.</p2>
                     <br>
-                    <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>'s UI/UX Design Booty Camp and was trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, and more.
+                    <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>'s UI/UX Design Boot Camp and was trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, and more.
                 </p>
             </div>
         </div>
@@ -108,22 +118,71 @@
         <!--Github Section-->
         <div class="Row" id="Github">
             <!--Left Column-->
-            <div class="Column_1">
-                <h1>My Github profile</h1>
-                <p>
-                    You can view my various coding project by checking out my Github!
-                    <br>
-                    <p class="center"><a href="https://github.com/MWKDawes" target="_blank">My Github</a></p>
+            <div class="Column_1" id="BLCol">
+                    <p id="BLTex">You can view my various coding projects by checking out my Github!
+                    <br><br>
+                    <a href="https://github.com/MWKDawes" target="_blank"><img src="./Images/Github.png" alt="Github Logo"></a></p>
                 </p>
             </div>
             <!--Right column-->
             <div class="Column_2">
-                <a href="https://github.com/MWKDawes" target="_blank"><img src="./Images/Github.png" alt="Github Logo"></a>
-            </div>
-        </div>
+
+                <!--Slideshow section-->
+                <div id="Slideshow">
+                    <div id="Slideshow_Background">
+                        <div id="Slideshow_Container">
+                            Slide 1
+                            <div class="mySlides fade">
+                                <img class="Slideshow_Images" src="./Images/PersonalPhoto.jpg" alt="Picture of myself and my Nana">
+                                <div class="text">I'm here to help get your project to the next level!</div>
+                            </div>
+                            Slide 2
+                            <div class="mySlides fade">
+                                <img class="Slideshow_Images" src="./Images/HTML.png" alt="Icon for HTML">
+                                <div class="text">I'm a UI/UX developer, trained in many languages including: HTML</div>
+                            </div>
+                            Slide 3
+                            <div class="mySlides fade">
+                                <img class="Slideshow_Images" src="./Images/CSS.png" alt="Icon for CSS">
+                                <div class="text">CSS</div>
+                            </div>
+                            Slide 4
+                            <div class="mySlides fade">
+                                <img class="Slideshow_Images" src="./Images/JS.png" alt="Icon for JS">
+                                <div class="text">Javascript</div>
+                            </div>
+                            Slide 5
+                            <div class="mySlides fade">
+                                <img class="Slideshow_Images" src="./Images/Python.png" alt="Icon for Python">
+                                <div class="text">Python</div>
+                            </div>
+                            Slide 6
+                            <div class="mySlides fade">
+                                <img class="Slideshow_Images" src="./Images/Java.png" alt="Icons for Java">
+                                <div class="text">Java</div>
+                            </div>
+                            Slide 7
+                            <div class="mySlides fade">
+                                <img class="Slideshow_Images" src="./Images/C++.png" alt="C++ icon">
+                                <div class="text">Have taken classes in C++ for game development, and more!</div>
+                            </div>
+                            Slide 8
+                            <div class="mySlides fade">
+                                <img class="Slideshow_Images" src="./Images/Computer_writing.jpg" alt="Writing on Computer image">
+                                <div class="text"><a class="white-text contact" onclick="openForm()">Feel free to contact me for any questions!</a></div>
+                            </div>
+                            Previous and next buttons
+                            <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                        </div>
+                        <br>
+
+                </div>
+                    </div>
+                </div>
 
         <!--Contact-->
-        <div id="Contact">
+        <!-- <div id="Contact">
             <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
             <div class="form-popup" id="myForm">
                 <form action="https://formspree.io/f/mgegwnde" method="post" class="form-container"> 
@@ -139,15 +198,15 @@
                     <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
                 </form>
             </div>
-        </div>
+        </div> -->
 
 
         <!--Footer section-->
-        <footer>
+        <!-- <footer>
             <p>
                 <p class="center">&copy;MWKD Inc., <a href="https://www.DangerousToGoAlone.com" target="_blank">...Take this</a></p>
             </p>
-        </footer>
+        </footer> -->
         <script src="./JS/main.js"></script>
     </body>
 </html>

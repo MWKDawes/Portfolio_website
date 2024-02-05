@@ -1,59 +1,73 @@
 html {
     scroll-behavior: smooth;
+    background: no-repeat;
+    background-position: 5;
+    background-size: initial;
+    background-image: url('../Images/MusicTreeArt.png'), radial-gradient(circle, #6A5637, #000000);
 }
 
 /* Body */
 body {
     margin: 0%; /*Display site all the way to edge of page*/
-    opacity: 1; /*This with transition aggect page loading effect*/
-    transition: 3s opacity; /*3s fade in*/
-    letter-spacing: .2vw; /*Relative measurement*/
-    font-family: Avant Garde, Helvetica;
-    font-size: 1.5vw;
-    overflow-x: hidden; /*Prevents horizontal scroll when quote is hovered and enlarged*/
+    /*opacity: 1;*/ /*This with transition aggect page loading effect*/
+    /* transition: 3s opacity; 3s fade in */
+    /* letter-spacing: .2vw; Relative measurement */
+    font-family: 'Tw Cen MT';
+    /* font-size: 1.5vw; */
+    /* overflow-x: hidden; Prevents horizontal scroll when quote is hovered and enlarged */
     user-select: none; /*Prevents text on webpage from being highlighted*/
 }
 
-body.fade-out {
-    opacity: .1; /*Sets level of opacity at start of fade*/
-}
+/*body.fade-out {
+    opacity: .1; *//*Sets level of opacity at start of fade*//*
+}*/
 
 /* Heading 1 elements */
-h1 {
+/* h1 {
     text-transform: uppercase; /*Capitalize letters*/
-    font-family: 'Mairon', sans-serif;    /*Sets font family for h1*/
-    text-align: center; /*Centering h1 elements*/
-    margin-top: 3%; /*small margin above h1 elements*/
-    color: #abaf2f;
-    text-shadow: 3px 3px 5px #1f724b;
-}
+    /* font-family: 'Mairon', sans-serif;    Sets font family for h1 */
+    /* text-align: center; Centering h1 elements */
+    /* margin-top: 3%; small margin above h1 elements */
+    /* color: #abaf2f; */
+    /* text-shadow: 3px 3px 5px #1f724b; */
+/* } */
 
-h1:hover {
-    filter: sepia(50%); /*Sepia filter over h1 headings*/
-    transform: scale(1.1); /*increase size of h1 when hovered*/
-    transition: transform .5s; /*Causes transformation to last 1 second*/
-}
+/* h1:hover { */
+    /* filter: sepia(50%); Sepia filter over h1 headings */
+    /* transform: scale(1.1); increase size of h1 when hovered */
+    /* transition: transform .5s; Causes transformation to last 1 second */
+/* } */
 
 /*Portfolio Title Text Styling*/
-.white-text {
-    color: #999D2B; /*Changes color of Portfolio Title Text*/
-    padding-top: 10vh; /*Adds padding to top of Portfolio*/
-}
+/* .white-text { */
+    /* color: #999D2B; Changes color of Portfolio Title Text */
+    /* padding-top: 10vh; Adds padding to top of Portfolio */
+/* } */
 
 /* Paragraph elements */
 p {
-    font-family: 'Courier New', Courier, monospace;
-    text-align: justify;
+    font-family: 'Tw Cen MT', Courier, monospace;
     letter-spacing: .1vw;
-    font-size: 2.5vw;
-    padding-left: 1vw;
-    padding-right: 1vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    color: #707070;
 }
 
-p:hover {
+p2 {
+    font-family: 'Tw Cen MT', Courier, monospace;
+    letter-spacing: .05vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    color: #707070;
+    font-size: larger;
+    font-weight: bold;
+}
+
+
+/* p:hover {
     transition: transform 0.5s;
     transform: scale(1.1);
-}
+} */
 
 /* Center class */
 .center {
@@ -67,7 +81,7 @@ p:hover {
 
 /* Anchor elements */
 a {
-    color: #ccd13a; /*Ensures links are yellow*/
+    color: #6A5637; /*Ensures links are yellow*/
     cursor: pointer; /*Ensures all links change to mouse to pointer*/
     text-decoration: underline; /*Ensures links are underlined*/
 }
@@ -78,26 +92,26 @@ q {
 }
 
 /* Image Elements */
-img {
-    filter: sepia(75%); /*Gives pics 75% sepia*/
-    border-radius: 8px; /*All images slight round corners*/
-    max-width: 100%; /*Ensures all images stay within width of container*/
-    max-height: 100%; /*Ensures all images stay within height*/
-    display: block; /*Specifying block display to ensure images are centered*/
-    margin: auto auto auto auto; /*Centers images*/
-}
+/* img { */
+    /* filter: sepia(75%); Gives pics 75% sepia */
+    /* border-radius: 8px; All images slight round corners */
+    /* max-width: 100%; Ensures all images stay within width of container */
+    /* max-height: 100%; Ensures all images stay within height */
+    /* display: block; Specifying block display to ensure images are centered */
+    /* margin: auto auto auto auto; Centers images */
+/* } */
 
-img:hover {
+/* img:hover {
     filter: none;
     transition: transform 1s;
     transform: scale(1.1);
-}
+} */
 
-footer {
+/* footer {
     padding: 2%;
     background-color: black;
     color: white;
-}
+} */
 
 /*** NAVBAR STYLING ***/
 .Navbar {
@@ -181,7 +195,7 @@ footer {
 
 /** SLIDESHOW STYLING **/
 #Slideshow_Background {
-    background: rgba(255, 255, 255, 0.35); /*Creates slightly transparent white background over vid in background*/
+    background: none; /*Creates slightly transparent white background over vid in background*/
 }
 
 .mySlides {
@@ -190,9 +204,9 @@ footer {
 
 /*Slideshow section / container*/
 #Slideshow_Container {
-    width: 39.5vw; /*Relative sizing of container for slideshow*/
+    width: 15vw; /*Relative sizing of container for slideshow*/
     height: auto; /*Height of container is adjusted based on content its displaying*/
-    padding-top: 4%; /*Adds small padding to top of container*/
+    /* padding-top: 4%; Adds small padding to top of container */
     position: relative; /*Sets container relative to normal positioning*/
     margin:auto;
 }
@@ -205,7 +219,7 @@ footer {
 /*Images contained within slideshow*/
 .Slideshow_Images {
     vertical-align: middle; /*centers images vertically within slideshow container*/
-    height: 25vw; /*Heigh of images is adjusted based on content*/
+    height: 15vw; /*Heigh of images is adjusted based on content*/
     box-shadow: 0px 5px 10px 12px rgb(0,0,0,.75); /*Adds shadow*/
     width: auto; /*Width of images automatically adjuste based on content*/
 }
@@ -216,10 +230,10 @@ footer {
     position: absolute; /*Makes next and previous positioned relative to slideshow*/
     top: 50%; /*Moves buttons up the slideshow container*/
     width: auto; /*Width of buttons is automatically adjusted based on content*/
-    padding: 2vw; /*Adds padding*/
-    color: darkgray;
+    padding: 0vw; /*Adds padding*/
+    color: #707070;
     font-weight: bold;
-    font-size: 1.5vw;
+    font-size: 2vw;
     border-radius: 0 3px 3px 0; /*Adds slightly rounded border*/
     user-select: none; /*Property makes it so user cannot highlight content*/
     transition: 0.6s ease; /*Specifies details of hover transition*/
@@ -231,6 +245,11 @@ footer {
     border-radius: 3px 0 0 3px; /*Changes border radius on next button to top and left*/
 }
 
+.Previous {
+    left: 0; /*Moves next button to right side of slideshow container*/
+    border-radius: 0 3px 3px 0; /*Changes border radius on next button to top and left*/
+}
+
 /*Hover effect for slideshow buttons*/
 .Previous:hover, .Next:hover {
     background-color: rgba(0, 0, 0, 0.8); /*Makes background of arrows transparent*/
@@ -239,16 +258,18 @@ footer {
 
 /*Slideshow text*/
 .text {
-    color: white;
-    padding: 1vw;
+    color: #707070;
+    padding-top: 0.5vh;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
     position: absolute; /*Ensures text is positioned within image*/
-    bottom: 0; /*Property sets text at bottom*/
+    bottom: .75vh; /*Property sets text at bottom*/
     width: 100%; /*Element covers full width of image*/
     text-align: center;
-    font-family: 'Mairon', sans-serif;
-    letter-spacing: .1vw; /*Slight spacing between languages*/
-    font-size: 1.5vw; /*Dont size relative to viewport width*/
-    background-color: #2B9D68; /*Gives slightly transparent background*/
+    font-family: 'Berlin Sans FB Demi';
+    letter-spacing: .05vw; /*Slight spacing between languages*/
+    font-size: 1vw; /*Dont size relative to viewport width*/
+    background-image: linear-gradient(to right, #EBC073, #FFA913); /*Gives slightly transparent background*/
     font-weight: bold;
     border-radius: 0px 0px 7px 7px; /*Gives text background rounded corners*/
 }
@@ -300,25 +321,43 @@ footer {
     float: left;
     width: 50%;
     padding: 10px;
-    padding-top: 3%;
-    height: 400px;
-    background-color: #2B9D68;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+}
+
+#TRCol {
+    background-image: url('../Images/FallingLeaves.png'), linear-gradient(to right, #EBC073, #FFA913);
+    text-align: center;
+}
+
+#TRTex {
+    padding-top: 2vw;
+    text-align: center;
+}
+
+#BLCol {
+    background-image: url('../Images/TreeTrunkSnippit.png'), linear-gradient(to right, #FFA913, #EBC073);
+}
+
+#BLTex {
+    text-align: center;
+    flex: 10vw;
+    padding-left: 25vw;
 }
 
 .Column_2 {
     float: left;
     width: 50%;
     padding: 10px;
-    padding-top: 1.9%;
-    height: 400px;
-    background-color: #999D2B;
+    background:none;
 }
 
-.Row:after {
+/* .Row:after {
     content: "";
     display: table;
     clear: both;
-}
+} */
 
 /** END OF TABLE STYLING **/
 
@@ -423,37 +462,37 @@ button:hover, .form-container .btn:hover {
 /***** Media Query Section *****/
 /*Media rules for paragraph font size for different screen sizes*/
 @media screen and (max-width: 527px) {
-    p {
+    p p2 {
         font-size: 3.75vw;
     }
 }
 
 @media screen and (min-width: 528px) and (max-width: 660px) {
-    p {
+    p p2 {
         font-size: 3.5vw;
     }
 }
 
 @media screen and (min-width: 661px) and (max-width: 799px) {
-    p {
+    p p2 {
         font-size: 2.75vw;
     }
 }
 
 @media screen and (min-width: 800px) and (max-width: 924px) {
-    p {
+    p p2 {
         font-size: 2.5vw;
     }
 }
 
 @media screen and (min-width: 925px) and (max-width: 1050px) {
-    p {
+    p p2 {
         font-size: 2.25vw;
     }
 }
 
 @media screen and (min-width: 1051px) and (max-width: 1310px) {
-    p {
+    p p2 {
         font-size: 2vw;
     } 
 }
@@ -497,12 +536,12 @@ button:hover, .form-container .btn:hover {
 }
 
 /* Media rules to increase the size of the columns for larger screens */
-@media screen and (min-width: 1725px) {
+@media screen and (min-width: 100px) {
     .Column_1 {
-        height: 550px;
+        height: 40.75vh;
     }
     .Column_2 {
-        height: 550px;
+        height: 35vh;
     }
 }
 
@@ -515,3 +554,35 @@ button:hover, .form-container .btn:hover {
 }
 
 /**END OF MEDIA QUERY**/
+
+
+/**NEW PAGE - NEW CODE - 2/4/24 **/
+.name-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    align-items: center;
+}
+
+#nameicon {
+    padding-left: 5%;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    max-width:100%;
+    min-height: 25%;
+}
+
+#monty {
+    font-family: 'Tw Cen MT';
+    font-size: 100%;
+    color: #707070;
+    font-weight: bold;
+    text-align: center;
+    padding: 50px;
+    white-space: nowrap;  
+    margin: 0;
+    position: relative;
+    left: 50%;
+}
