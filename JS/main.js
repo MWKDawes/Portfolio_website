@@ -1,11 +1,3 @@
-//Open and close contact form
-function openForm() {
-    document.getElementById("myForm").style.display = 'block';
-}
-
-function closeForm() {
-    document.getElementById("myForm").style.display = "none";
-}
 
 //Function displays first image in slideshow
 var slideIndex = 1;
@@ -35,3 +27,12 @@ document.addEventListener("click", function(event){
         closeForm()
     }
 }, false)
+
+<!--//Open and close contact form-->
+function openForm() {
+    document.getElementById("myForm").style.display = 'block';
+}
+
+function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+}

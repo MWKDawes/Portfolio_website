@@ -1,48 +1,23 @@
 html {
-    scroll-behavior: smooth;
     background: no-repeat;
-    background-position: 5;
-    background-size: initial;
-    background-image: url('../Images/MusicTreeArt.png'), radial-gradient(circle, #6A5637, #000000);
+    /* background-position: 1; */
+    background-image: url('../Images/MusicTreeArt2.png'), radial-gradient(circle, #6A5637, #000000);
+    background-size: 50vw 50vh, 100vw 100vh;
+    background-position-y: 15%, 0%;
 }
 
 /* Body */
 body {
+    background: none;
     margin: 0%; /*Display site all the way to edge of page*/
-    /*opacity: 1;*/ /*This with transition aggect page loading effect*/
-    /* transition: 3s opacity; 3s fade in */
+    /*opacity: 1;*/ /*This with transition affect page loading effect*/
+    /*transition: 3s opacity; 3s fade in */
     /* letter-spacing: .2vw; Relative measurement */
     font-family: 'Tw Cen MT';
     /* font-size: 1.5vw; */
-    /* overflow-x: hidden; Prevents horizontal scroll when quote is hovered and enlarged */
+    overflow-x: hidden; /*Prevents horizontal scroll when quote is hovered and enlarged */
     user-select: none; /*Prevents text on webpage from being highlighted*/
 }
-
-/*body.fade-out {
-    opacity: .1; *//*Sets level of opacity at start of fade*//*
-}*/
-
-/* Heading 1 elements */
-/* h1 {
-    text-transform: uppercase; /*Capitalize letters*/
-    /* font-family: 'Mairon', sans-serif;    Sets font family for h1 */
-    /* text-align: center; Centering h1 elements */
-    /* margin-top: 3%; small margin above h1 elements */
-    /* color: #abaf2f; */
-    /* text-shadow: 3px 3px 5px #1f724b; */
-/* } */
-
-/* h1:hover { */
-    /* filter: sepia(50%); Sepia filter over h1 headings */
-    /* transform: scale(1.1); increase size of h1 when hovered */
-    /* transition: transform .5s; Causes transformation to last 1 second */
-/* } */
-
-/*Portfolio Title Text Styling*/
-/* .white-text { */
-    /* color: #999D2B; Changes color of Portfolio Title Text */
-    /* padding-top: 10vh; Adds padding to top of Portfolio */
-/* } */
 
 /* Paragraph elements */
 p {
@@ -63,12 +38,6 @@ p2 {
     font-weight: bold;
 }
 
-
-/* p:hover {
-    transition: transform 0.5s;
-    transform: scale(1.1);
-} */
-
 /* Center class */
 .center {
     text-align: center;
@@ -81,7 +50,7 @@ p2 {
 
 /* Anchor elements */
 a {
-    color: #6A5637; /*Ensures links are yellow*/
+    color: #6A5637; /*Ensures links are darker*/
     cursor: pointer; /*Ensures all links change to mouse to pointer*/
     text-decoration: underline; /*Ensures links are underlined*/
 }
@@ -91,124 +60,17 @@ q {
     font-style: italic;
 }
 
-/* Image Elements */
-/* img { */
-    /* filter: sepia(75%); Gives pics 75% sepia */
-    /* border-radius: 8px; All images slight round corners */
-    /* max-width: 100%; Ensures all images stay within width of container */
-    /* max-height: 100%; Ensures all images stay within height */
-    /* display: block; Specifying block display to ensure images are centered */
-    /* margin: auto auto auto auto; Centers images */
-/* } */
-
-/* img:hover {
-    filter: none;
-    transition: transform 1s;
-    transform: scale(1.1);
-} */
-
-/* footer {
-    padding: 2%;
-    background-color: black;
-    color: white;
-} */
-
-/*** NAVBAR STYLING ***/
-.Navbar {
-    overflow: hidden;
-    background-color: #2B9D68;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1;
-    -webkit-animation: moveNav 5s;
-    animation: moveNav 5s;
-}
-
-@keyframes moveNav {
-    from {left: -100vw;}
-    to {left: 0vw;}
-}
-
-/* Links */
-.Navbar a {
-    float: left;
-    display: block;
-    color: #b5b932;
-    padding: .75vw 1vw;
-    text-decoration: none;
-    font-family: 'Mairon', sans-serif;
-    font-size: 1.5vw;
-    text-align: center;
-    text-shadow: 3px 3px 5px rgb(23, 83, 55);
-    position: relative;
-}
-
-.Navbar a:hover {
-    background-color:#21754e; /*Defines background color when hovered*/
-    color: #999D2B; /*Defines font color to display when navbar elements are hovered*/
-    font-weight: bold; /*Makes navbar text bold when hovered*/
-    cursor: pointer; 
-    transition: 0.5s ease-in; /*Creates smooth transition for hover trigger*/
-}
-
-.Navbar a.active {
-    background-color: #1f724b;
-}
-
-/**END OF NAVBAR**/
-
-/** VIDEO STYLING **/
-#Typing_Video {
-    top: 0;
-    min-height: 100%;
-    min-width: auto;
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    z-index: -1;
-}
-
-@media screen and (max-width: 576px) {
-    #Typing_Video {
-        display: none;
-    }
-}
-
-.Video_Text {
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    width: 100%;
-    height: 100vh;
-    padding-top: 2vh;
-    position: relative;
-    -webkit-animation: moveVideoText 5.75s;
-    animation: moveVideoText 5.75s;
-}
-
-@keyframes moveVideoText {
-    from {top:-100vw;}
-    to {top:0vw;}
-}
-/** END OF VIDEO STYLING **/
-
-/** SLIDESHOW STYLING **/
-#Slideshow_Background {
-    background: none; /*Creates slightly transparent white background over vid in background*/
-}
-
 .mySlides {
     display: none; /*Prevents images from being displayed*/
 }
 
 /*Slideshow section / container*/
 #Slideshow_Container {
-    width: 15vw; /*Relative sizing of container for slideshow*/
+    width: 20em; /*Relative sizing of container for slideshow*/
     height: auto; /*Height of container is adjusted based on content its displaying*/
-    /* padding-top: 4%; Adds small padding to top of container */
+    padding-top: 4vh; /*Adds small padding to top of container */
     position: relative; /*Sets container relative to normal positioning*/
-    margin:auto;
+    margin: auto;
 }
 
 /*Removes underline from previous and next buttons*/
@@ -219,9 +81,10 @@ q {
 /*Images contained within slideshow*/
 .Slideshow_Images {
     vertical-align: middle; /*centers images vertically within slideshow container*/
-    height: 15vw; /*Heigh of images is adjusted based on content*/
+    height: auto; /*Heigh of images is adjusted based on content*/
     box-shadow: 0px 5px 10px 12px rgb(0,0,0,.75); /*Adds shadow*/
-    width: auto; /*Width of images automatically adjuste based on content*/
+    width: 20em; /*Width of images automatically adjuste based on content*/
+    border-radius: 0 0 5px 5px;
 }
 
 /*Next and Previous buttons*/
@@ -229,11 +92,11 @@ q {
     cursor: pointer; /*Changes mouse to pointer when buttons are selected*/
     position: absolute; /*Makes next and previous positioned relative to slideshow*/
     top: 50%; /*Moves buttons up the slideshow container*/
-    width: auto; /*Width of buttons is automatically adjusted based on content*/
+    /* width: -40vh; Width of buttons is automatically adjusted based on content */
     padding: 0vw; /*Adds padding*/
     color: #707070;
     font-weight: bold;
-    font-size: 2vw;
+    font-size: 2em;
     border-radius: 0 3px 3px 0; /*Adds slightly rounded border*/
     user-select: none; /*Property makes it so user cannot highlight content*/
     transition: 0.6s ease; /*Specifies details of hover transition*/
@@ -263,29 +126,17 @@ q {
     padding-left: 0.5vw;
     padding-right: 0.5vw;
     position: absolute; /*Ensures text is positioned within image*/
-    bottom: .75vh; /*Property sets text at bottom*/
+    bottom: 0vh; /*Property sets text at bottom*/
     width: 100%; /*Element covers full width of image*/
     text-align: center;
     font-family: 'Berlin Sans FB Demi';
     letter-spacing: .05vw; /*Slight spacing between languages*/
-    font-size: 1vw; /*Dont size relative to viewport width*/
+    font-size: 1em; /*Dont size relative to viewport width*/
     background-image: linear-gradient(to right, #EBC073, #FFA913); /*Gives slightly transparent background*/
     font-weight: bold;
-    border-radius: 0px 0px 7px 7px; /*Gives text background rounded corners*/
+    border-radius: 0px 0px 5px 5px; /*Gives text background rounded corners*/
 }
 
-/*Styling of dots under slideshow*/
-.dot {
-    cursor: pointer;
-    height: 1vw;
-    width: 1vw;
-    margin: .25vw;
-    background-color: white;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-    z-index: 1;
-}
 
 /*Hover effect for slideshow dots*/
 .active, .dot:hover {
@@ -328,6 +179,8 @@ q {
 
 #TRCol {
     background-image: url('../Images/FallingLeaves.png'), linear-gradient(to right, #EBC073, #FFA913);
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, cover;
     text-align: center;
 }
 
@@ -338,12 +191,21 @@ q {
 
 #BLCol {
     background-image: url('../Images/TreeTrunkSnippit.png'), linear-gradient(to right, #FFA913, #EBC073);
+    background-size: 65vw 41vh, cover;
+    background-position: 0% -5%, 0%;
+    background-repeat: no-repeat, no-repeat;
+    contain: paint;
 }
 
 #BLTex {
     text-align: center;
     flex: 10vw;
     padding-left: 25vw;
+    font-size: 1em;
+}
+
+#icon {
+    width: 10em;
 }
 
 .Column_2 {
@@ -353,32 +215,28 @@ q {
     background:none;
 }
 
-/* .Row:after {
-    content: "";
-    display: table;
-    clear: both;
-} */
-
 /** END OF TABLE STYLING **/
 
 /** CONTACT FORM STYLING **/
 /*Button to open contact form*/
 .Pop_Up_Button {
     position: fixed;
-    bottom: 1.75vw;
-    right: 1.75vw;
-    width: 25vw;
-    background-color:#999D2B;
-    color: rgb(255, 255, 255);
-    border: solid darkgreen;
+    bottom: 1vw;
+    right: 1vw;
+    width: 12vw;
+    height: auto;
+    background-image: linear-gradient(to right, #FFA913, #EBC073);
+    color: #707070;
     cursor: pointer;
     -webkit-animation: movePopup 5s;
     animation: movePopup 5s;
+    align-content: center;
+    border-radius: 10px;
 }
 
 @keyframes movePopup {
     from {right: -40vw;}
-    to {right: 1.75vw;}
+    to {right: 1vw;}
 }
 
 @-webkit-keyframes movePopup {
@@ -399,10 +257,11 @@ q {
 .form-container {
     max-width: 49vw;
     padding: 1vw;
-    background-color: #1f724b;
+    background-image: linear-gradient(to right, #FFA913, #EBC073);
 }
 
 .form-container input[type=text] {
+    color: black;
     width: 100%;
     padding: .93vw;
     margin: .6vw 0 .6vw 0;
@@ -411,13 +270,14 @@ q {
     font-size: 1vw;
 }
 
-/*Styling for all buttons*/
+/*Styling for Contact button*/
 button {
-    font-family: 'Zelda DX TT (BRK)', sans-serif;
+    font-family: 'Tw Cen MT', Courier, monospace;
     letter-spacing: .3vw;
     font-size: 1.5vw;
     font-weight: bold;
-    padding: 1.5vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
     cursor: pointer;
     width: 100%;
     height: auto;
@@ -425,26 +285,26 @@ button {
 
 /*Hover effect for contact and submit*/
 button:hover, .form-container .btn:hover {
-    color: white;
+    color: #584221;
     background-color: #2B9D68;
     transition-duration: 1s;
     -webkit-transition-duration: 1s;
-    border-color: silver
+    border-color: #6A5637;
 }
-
 /*Submit button*/
 .form-container .btn {
     background-color: white;
     color: black;
     border-color: black;
     margin-bottom: 1vh;
+    width: 10vw;
 }
 
 /*Close button*/
 .form-container .cancel {
     background-color: black;
     color: white;
-    border-color: gray;
+    border-color: black;
 }
 
 /*Styling for Close button hover*/
@@ -525,7 +385,7 @@ button:hover, .form-container .btn:hover {
 }
 
 /* Media rules to enlarge the font of the white text for smaller screens */
-@media screen and (max-width: 1080px) {
+/* @media screen and (max-width: 1080px) {
     .quote{
         font-size: 3.5vw;
     }
@@ -533,7 +393,7 @@ button:hover, .form-container .btn:hover {
     .white-text {
         font-size: 4.5vw;
     }
-}
+} */
 
 /* Media rules to increase the size of the columns for larger screens */
 @media screen and (min-width: 100px) {
@@ -561,28 +421,38 @@ button:hover, .form-container .btn:hover {
     display: flex;
     flex-direction: row;
     position: relative;
-    width: 100%;
     align-items: center;
+    justify-content: space-between;
+    background: none;
 }
 
 #nameicon {
-    padding-left: 5%;
-    margin: 0;
-    top: 50%;
-    left: 50%;
-    max-width:100%;
-    min-height: 25%;
+    padding-left: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    align-self: flex-start;
+    float: left;
+    /* margin: 0; */
+    /* top: 50em; */
+    /* left: 50em; */
+    max-width: 40rem;
+    min-height: 1rem;
 }
 
 #monty {
     font-family: 'Tw Cen MT';
-    font-size: 100%;
+    font-size: .7em;
+    float: right;
     color: #707070;
     font-weight: bold;
-    text-align: center;
-    padding: 50px;
+    text-align: right;
+    /* padding: 50px; */
     white-space: nowrap;  
     margin: 0;
     position: relative;
-    left: 50%;
+    right:0%
+}
+
+#cont {
+    text-decoration: underline;
 }
